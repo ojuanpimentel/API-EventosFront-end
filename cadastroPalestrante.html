@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body class="main">
+    <header>
+        <div class="navMaior">
+            <nav class="navbar">
+                <h1>Gerenciador de Eventos</h1>
+                <ul class="nav-links">
+                    <li><a href="cadastroPalestrante.html">Cadastro de palestrantes</a></li>
+                    <li><a href="cadastroEvento.html">Cadastro de eventos</a></li>
+                    <li><a href="gerenciadorEvento.html">Gerenciador de Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <main>
+        <h2>Cadastro Palestrante</h2>
+
+        <br><br>
+
+        <form id="formPalestrante">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+ 
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+ 
+                <button type="submit">Cadastrar</button>
+        </form>
+        <p id="mensagem" class="mensagem" role="status" aria-live="polite"></p>
+    </main>
+    <script src="api.js" defer></script>
+    <script src="cadastroPalestrante.js" defer></script>
+</body>
+ 
+ 
+</html>
